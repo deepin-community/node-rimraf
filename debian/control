@@ -1,0 +1,32 @@
+Source: node-rimraf
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Jérémy Lal <kapouer@melix.org>
+Build-Depends: debhelper-compat (= 13)
+ , node-glob
+ , node-mkdirp
+ , node-tap
+ , dh-sequence-nodejs
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-rimraf
+Vcs-Git: https://salsa.debian.org/js-team/node-rimraf.git
+Homepage: https://github.com/isaacs/rimraf
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-rimraf
+Architecture: all
+Depends: ${misc:Depends}
+ , node-glob
+ , nodejs
+Recommends: node-graceful-fs
+Provides: ${nodejs:Provides}
+Description: Deep deletion (like rm -rf) module for Node.js
+ node-rimraf is a Node.js module that provides asynchronous deep-deletion
+ of files and directories.
+ .
+ The `rimraf` executable is a faster alternative to the `rm -rf` shell
+ command.
+ .
+ Node.js is an event-based server-side javascript engine.

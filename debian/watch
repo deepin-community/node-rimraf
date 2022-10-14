@@ -1,0 +1,8 @@
+version=4
+opts=filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-rimraf-$1.tar.gz/ \
+https://github.com/isaacs/rimraf/tags .*/archive/v?([\d\.]+).tar.gz	
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,component=types-rimraf,pgpmode=none" \
+ https://registry.npmjs.org/@types/rimraf https://registry.npmjs.org/@types/rimraf/-/rimraf-([\d\.]+)@ARCHIVE_EXT@ ignore
