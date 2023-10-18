@@ -1,3 +1,17 @@
+node-rimraf (3.0.2-2) unstable; urgency=medium
+
+  * Team upload
+  * debian/watch:
+    * Add ctype=nodejs to component(s)
+    * Fix GitHub tags regex
+    * Fix filenamemangle
+  * Declare compliance with policy 4.6.0
+  * Update nodejs dependency to nodejs:any
+  * Mark test dependencies with <!nocheck>
+  * Fix test for tap >= 15 (Closes: #1009515)
+
+ -- Yadd <yadd@debian.org>  Fri, 15 Apr 2022 07:15:43 +0200
+
 node-rimraf (3.0.2-1) unstable; urgency=medium
 
   * Team upload
